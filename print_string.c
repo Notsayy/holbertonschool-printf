@@ -5,7 +5,7 @@
  * print_string - Prints a string.
  * @args: A list of arguments containing the string to print.
  *
- * Return: Nothing
+ * Return: Return: The number of characters printed.
  */
 
 int print_string(va_list args)
