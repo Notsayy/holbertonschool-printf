@@ -2,14 +2,14 @@
 #define MAIN_H
 #include <stdarg.h>
 
+int main(void);
 int _putchar(char c);
 int _printf(const char *format, ...);
-void print_char(va_list args);
-void print_string(va_list args);
-void print_integer(va_list args);
-void print_percent(va_list args);
-int main(void);
-void print_decimal(va_list args);
-void print_number(int value);
+int print_char(va_list args);
+int print_decimal(va_list args);
+int print_integer(va_list args);
+int print_number(unsigned int value);
+int print_percent(va_list args);
+int print_string(va_list args);
 
 #endif
