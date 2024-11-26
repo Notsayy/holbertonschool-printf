@@ -8,15 +8,18 @@
  * Return: Nothing
  */
 
-void print_string(va_list args)
+int print_string(va_list args)
 {
 	char *string = va_arg(args, char *);
+	int count = 0;
 
-	if (string == NULL)
-		string = "(nil)";
+	if (string == NULL || *string == '\0')
+		return (0);
 
 	while (*string)
 	{
 		_putchar(*string++);
+		count++;
 	}
+	return (count);
 }
