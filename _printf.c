@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	int length = 0;
 	unsigned int specifier_count;
 
-	void (*print_funcs[])(va_list) = {
+	int (*print_funcs[])(va_list) = {
 		print_char, print_string, print_decimal, print_integer, print_percent};
 	char format_specifiers[] = {'c', 's', 'd', 'i', '%'};
 
@@ -33,8 +33,7 @@ int _printf(const char *format, ...)
 			{
 				if (format[format_count] == format_specifiers[specifier_count])
 				{
-					print_funcs[specifier_count](args);
-					length++;
+					length += print_funcs[specifier_count](args);
 					break;
 				}
 			}
