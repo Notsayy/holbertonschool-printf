@@ -28,7 +28,7 @@ which means that this project will include only .c files.
 
 ## Project structure
 - [main.h](./main.h) : Header file.
-- _putchar.c(./_putchar.c): contain the function "_putchar".
+- [_putchar.c](./_putchar.c): contain the function "_putchar".
 
 
 ## Specifiers
