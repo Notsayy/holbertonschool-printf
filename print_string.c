@@ -13,7 +13,7 @@ int print_string(va_list args)
 	char *string = va_arg(args, char *);
 	int count = 0;
 
-	if (string == NULL || *string == '\0')
+	if (string == NULL)
 		{
 		_putchar('(');
 		_putchar('n');
