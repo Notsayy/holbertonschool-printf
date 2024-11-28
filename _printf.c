@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	unsigned int format_count = 0;
-	int length = 0;
+	unsigned int length = 0;
 	unsigned int specifier_count;
 
 	int (*print_funcs[])(va_list) = {
