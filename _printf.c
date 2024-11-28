@@ -38,13 +38,13 @@ int _printf(const char *format, ...)
 			if (specifier_count == 5)
 			{
 				_putchar('%');
-				_putchar(format[format_count]);
-				length += 2; }
+				length += _putchar(format[format_count]);
+				 ; }
 		}
 		else
 		{
-			_putchar(format[format_count]);
-			length++; }
+			length += _putchar(format[format_count]);
+			}
 		format_count++;
 	}
 	va_end(args);
