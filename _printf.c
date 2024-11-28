@@ -36,8 +36,9 @@ int _printf(const char *format, ...)
 			if (specifier_count == 5)
 			{
 				_putchar('%');
-				length += _putchar(format[format_count]);
-				 ; }
+				  _putchar(format[format_count]);
+				  length += 2;
+				}
 		}
 		else
 		{
