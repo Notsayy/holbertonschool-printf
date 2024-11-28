@@ -55,6 +55,7 @@ int main(void)
     return (0);
 }
 ```
+![Flowchart](flowchart.png)
 
 ## Credits
 This project is presented by:
