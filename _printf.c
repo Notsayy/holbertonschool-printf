@@ -14,23 +14,26 @@ int _printf(const char *format, ...)
 	unsigned int format_count = 0;
 	unsigned int length = 0;
 	unsigned int specifier_count;
-
 	int (*print_funcs[])(va_list) = {
 		print_char, print_string, print_decimal, print_integer, print_percent};
 	char format_specifiers[] = {'c', 's', 'd', 'i', '%'};
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(args, format);
 	while (format[format_count])
 	{
 		if (format[format_count] == '%')
 		{
 			format_count++;
-			for (specifier_count = 0; specifier_count < sizeof(format_specifiers)
-			/ sizeof(format_specifiers[0]); specifier_count++)
+			if (format[format_count] == '\0')
 			{
+				_putchar('%');
+				length++;
+				break;
+			}
+			for (specifier_count = 0; specifier_count < sizeof(format_specifiers)
+			/ sizeof(format_specifiers[0]); specifier_count++) {
 				if (format[format_count] == format_specifiers[specifier_count])
 				{
 					length += print_funcs[specifier_count](args);
