@@ -1,14 +1,13 @@
 #include "main.h"
-
 /**
  * print_percent - Prints the percent sign '%'
  * @args: A list of arguments
  *
- * Return: Nothing
+ * Return: The total number of digits printed.
  */
-
-void print_percent(va_list args)
+int print_percent(va_list args)
 {
-	(void)args;
-	_putchar('%');
+    (void)args;
+    _putchar('%');
+    return (1);
 }
