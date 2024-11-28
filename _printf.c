@@ -25,9 +25,7 @@ int _printf(const char *format, ...)
 			format_count++;
 			if (format[format_count] == '\0')
 			{
-				_putchar('%');
-				length++;
-				break; }
+				return (-1); }
 			for (specifier_count = 0; specifier_count < 5; specifier_count++)
 			{
 				if (format[format_count] == format_specifiers[specifier_count])
