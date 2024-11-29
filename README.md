@@ -29,6 +29,13 @@ which means that this project will include only .c files.
 ## Project structure
 - [main.h](./main.h) : Header file.
 - [_putchar.c](./_putchar.c): contain the function "_putchar".
+- [print_number.c](./print_number.c): contain the function "print number".
+- [print_char.c](./print_char.c): contain the function "print char".
+- [print_integer.c](./print_integer.c): contain the function "print integer".
+- [print_decimal.c](./print_decimal.c): contain the function "print decimal".
+- [print_string.c](./print_string.c): contain the function "print string".
+- [print_percent.c](./print_percent.c): contain the function "print percent".
+- [_printf.c](./_printf.c): contain the main implementation of the custom function "printf".
 
 
 ## Specifiers
@@ -56,6 +63,9 @@ int main(void)
 }
 ```
 ![Flowchart](flowchart.png)
+
+## Bugs
+Don't hesitate to let us know if you see any bug regarding the code.
 
 ## Credits
 This project is presented by:
