@@ -35,7 +35,9 @@ Prints a percentage.
 .PP
 Print a greeting message:
 .B
-printf "Thank %s!\n" "You"
+_printf "Thank %s!\n" "You"
+_printf("The first 5 impair numbers are: %d, %d, %d, %d, %d\n", 1, 3, 5, 7, 9);
+_printf("Printing a percentage: %%\n");
 
 .SH BUGS
 If there are any bugs in your program, or anything that does 
