@@ -62,6 +62,7 @@ int main(void)
     return (0);
 }
 ```
+## Flowchart
 ![Flowchart](flowchart.png)
 
 ## Bugs
