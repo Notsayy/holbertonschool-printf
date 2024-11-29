@@ -21,10 +21,13 @@ Prints a string.
 .TP
 .B %d
 Prints a decimal integer.
+.TP
 .B %c
 Prints a character.
+.TP
 .B %i
 Prints an integer (matching with decimals, octal & hexadecimals).
+.TP
 .B %%
 Prints a percentage.
 
