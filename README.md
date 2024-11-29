@@ -63,7 +63,7 @@ int main(void)
 }
 ```
 ## Flowchart
-![Flowchart](flowchart.png)
+![Flowchart](image/flowchart.png)
 
 ## Bugs
 Don't hesitate to let us know if you see any bug regarding the code.
